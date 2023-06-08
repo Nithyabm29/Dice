@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 void main() {
   return runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.pink,
         appBar: AppBar(
-          title: const Text('Dice'),
-          backgroundColor: Colors.red,
+          centerTitle: true,
+          title: const Text('DICE'),
+          backgroundColor: Colors.pink[600],
         ),
         body: DicePage(),
       ),
@@ -40,7 +42,7 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: ElevatedButton(
               style: const ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.red),
+                backgroundColor: MaterialStatePropertyAll(Colors.pink),
                 elevation: MaterialStatePropertyAll(0),
               ),
               onPressed: () {
@@ -53,7 +55,7 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: ElevatedButton(
               style: const ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.red),
+                backgroundColor: MaterialStatePropertyAll(Colors.pink),
                 elevation: MaterialStatePropertyAll(0),
               ),
               onPressed: () {
